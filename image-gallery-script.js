@@ -20,6 +20,7 @@ var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() { 
     modal.style.display = "none";
+    document.body.style.overflow = "scroll";
 }
 
 var images = document.getElementsByTagName('img'); //this is how we get all the images in the document.
