@@ -1,0 +1,139 @@
+/* CSS Base Reset and Foundational Styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 1000vh;
+	font-size: 16px;
+	scroll-behavior: smooth;
+
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+
+
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.art-piece {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.art-piece:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-grow: 10;
+  flex-shrink: 10;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.modal-content{  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: block;
+  margin: auto;
+
+  max-width: 90%;
+  height: auto;
+}
+/* The @ symbol defines a special directive. Other examples include: @media, @font-face, @keyframes, and @supports. Kinda like a built in library */
+@keyframes zoom { /*the name zoom can be anything*/
+  from {transform:scale(0.1) rotate(360deg)}
+  to {transform:scale(1)}
+}
+
+.button { /*POI 1*/
+    display: inline-block;
+    background-color: white;
+    color: #000000;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: black;
+}
+
+#page-title {
+    text-align: center;
+    text-wrap-mode: wrap;
+    padding: 20px;
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #C0C9DB;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+button, input, textarea, select {
+	font: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul, ol {
+	list-style: none;
+}
