@@ -25,6 +25,7 @@ span.onclick = function() {
 
 var images = document.getElementsByTagName('img'); //this is how we get all the images in the document.
 var modalImg = document.getElementById("modal-img");
+var modalText = document.getElementById("modal-text"); //gets the caption element that will display the description of the image clicked.
 var i;
 for (i = 0; i < images.length; i++) {
     images[i].onclick = function(){
@@ -32,5 +33,6 @@ for (i = 0; i < images.length; i++) {
     modal.style.display = "flex";
     document.body.style.overflow = "hidden";
     modalImg.src = this.src;
+    modalText.innerHTML = this.nextElementSibling.innerHTML; 
     }
 }

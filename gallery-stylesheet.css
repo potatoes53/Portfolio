@@ -35,19 +35,50 @@ html {
   z-index: 1; /* Sit on top */
 
 
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+}
+#modal-text {
+  margin: auto;
+  display: block;
+  text-align: center;
+  color: #ccc;
+  padding-bottom: 50px;
+}
+.description {
+  display: none;
 }
 .art-piece {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
   overflow: hidden;
   background-color: #ffffff;
+  width: 200px;
+
+  overflow: hidden;
+}
+.art-piece img {
+  height: 200px;
+
+  object-fit: cover;
+  object-position: top;
+
+  display: block;
+}
+.art-piece p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  padding: 10px;
+  margin: 0;
 }
 .art-piece:hover {
   transform: translateY(-5px);
@@ -68,12 +99,14 @@ html {
   animation-name: zoom;
   animation-duration: 0.6s;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 5;
   display: block;
-  margin: auto;
 
-  max-width: 90%;
+
+  width: 50%;
   height: auto;
+
+
 }
 /* The @ symbol defines a special directive. Other examples include: @media, @font-face, @keyframes, and @supports. Kinda like a built in library */
 @keyframes zoom { /*the name zoom can be anything*/

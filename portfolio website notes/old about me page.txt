@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <link rel="stylesheet" href="the CSS.css">
+    <a href="index.html" class="button" target="_self">Back</a>
+    <h1>About Me</h1>
+    <p>I was just the run-of-the-mill, bored school student. I didn't like class, I looked for excuses to stay home, 
+    and I watched the clock impatiently as it ticked away the seconds, minutes, and hours.
+    <br>
+    <br>
+    Everyday was the same to me. I'd wake up, eat some sugary cereal early in the morning, and spend the majority of day-light hours sitting
+    statue like in a classroom, begging for something INTERESTING to happen. I was completely unenthusiastic about the work I was doing.
+    All I could think of all day was getting home and spending the rest of my dwindling hours left playing video games and watching youtube.
+    <br>
+    <br>
+    This process went on for years. Years of dispair and disinterest and imagination-squashing and joy-killing and systematic enstupification.
+    It was killing me.
+    <br>
+    <br>
+    Then, FINALLY, after the culmination of light mental disease, vague school social ostracization, and existential befuddlement, my parents
+    caved and pulled me out of the coal mine. I was finally free--or so I thought. It turns out that after leaving 'regular' school, you have
+    online school, which I was subsequently FORCED into (hooray). 
+    <br>
+    <br>
+    Here's the issue: When you take a person out of a system that tell them <em>precisely</em> what to do, their brain's gonna be fucking 
+    confused <span class="s-p">(oh my, a cuss!)</span>.
+    <br>
+    <br>
+    It was <em >maybe</em> a change for the worse. Now I was procrastinating, not getting ANY social interaction, and still feeling very existentially
+    stranded. 
+    <br>
+    <br>
+    Now, even though I like to look back on those days and say, "wow, that was a shit show!" <span class="s-p">(goodness gracious)</span>, I did grow
+    a lot during that time. I watched videos on philosophy and science, listened to great speakers in various fields, and started to develop some 
+    pretty rad 3D modeling skills.
+    <br>
+    <br>
+    But it wasn't enough, of course. I was very much failing academically and NONE of my efforts were being recorded whatsoever. But that's when my 
+    Mom found out about !!!<img src="images/PSA-logo.png" alt="psa logo" style="display:inline; height:1.8em; vertical-align:middle;">!!!
+    <br>
+    <br>
+    In a time of confusion and little hope, Pacific Sands Academy served as a beacon of hope that I could cling onto. Finally all the work
+    I was doing could be recorded and acknowledged as more than just the shenanigans of a unschooled-kid. Shauna, the Founder and my advisor
+    , has guided and supported me during my time learning and exploring the world thus far, and with her help, I have been empowered
+    to be couragous and creative. Instead of the endless streams of worksheets and homework, I follow my passion and learn out of genuine 
+    interest.
+    <br>
+    <br>
+    I am very grateful to be a part of Pacific Sands Academy, and I am excited to see where I go from here.
+    <br>
+    <span style="display:flex; align-items:center; justify-content: center;">Thank you, Mrs. Shauna, PSA.</span>
+</p>
+</body>
+</html>

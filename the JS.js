@@ -3,7 +3,7 @@ console.log('Hello, World!');
 
 // Variables
 const name = 'User';
-let myNum = 23;
+let myNum = 1;
 var message = 'Welcome';
 
 // Function
