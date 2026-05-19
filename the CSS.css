@@ -40,11 +40,11 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: 50% 50%; */
 }
-#particle-canvas{
+/* #particle-canvas{
     display: block;
     margin: 0 auto;
     outline: 5px solid rgb(247, 92, 92);
-}
+} */
 
 #blender-stuff {
     display: flex;
@@ -95,18 +95,35 @@ background-size: 50% 50%; */
     padding-right: 100px;
 }
 
+.hero-canvas {
+    position: absolute;
+    inset: 0;                     /* shorthand: top/right/bottom/left = 0 */
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: block;
+
+    /* outline: #f81010 solid 5px; */
+}
+#heroCanvasContainer {
+    position: none;
+
+    width: 100%;
+    height: 80vh;
+}
 .button { /*POI 1*/
     display: inline-block;
     background-color: var(--link-water);
     color: #000000;
     padding: 1rem;
+    margin: 1rem;
     border-radius: 0.5rem;
     font-weight: black;
+    transition: 0.3s ease-in-out 0.1s;
 }
 .button:hover {
     background-color: var(--echo-blue);
     color: #000000;
-    transition: 0.3s ease-in-out;
     transform: scale(1.1);
     outline: var(--cello) solid 5px;
 }

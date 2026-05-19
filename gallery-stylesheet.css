@@ -5,7 +5,20 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+:root{
+    /*
+BLACK RUSSIAN: HEX: #121524 
+CELLO: HEX: #384C65 
+WEDGEWOOD: HEX: #485F88 
+ECHO BLUE: HEX: #9DACCC 
+LINK WATER: HEX: #C0C9DB
+*/
+--black-russian: #121524;
+--cello: #384C65;
+--wedgewood: #485F88;
+--echo-blue: #9DACCC;
+--link-water: #C0C9DB;
+}
 html {
 	height: 1000vh;
 	font-size: 16px;
@@ -115,12 +128,20 @@ html {
 }
 
 .button { /*POI 1*/
-    display: inline-block;
-    background-color: white;
+  display: inline-block;
+  background-color: var(--link-water);
+  color: #000000;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  font-weight: black;
+  transition: 0.3s ease-in-out 0.1s;
+}
+.button:hover {
+    background-color: var(--echo-blue);
     color: #000000;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    font-weight: black;
+    transform: scale(1.1);
+    outline: var(--cello) solid 5px;
 }
 
 #page-title {
@@ -131,8 +152,8 @@ html {
 body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 	line-height: 1.6;
-	color: #333;
-	background-color: #C0C9DB;
+	color: var(--black-russian);
+	background-color: var(--echo-blue);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -159,12 +180,8 @@ img {
 	display: block;
 }
 
-button, input, textarea, select {
+input, textarea, select {
 	font: inherit;
-}
-
-button {
-	cursor: pointer;
 }
 
 ul, ol {
