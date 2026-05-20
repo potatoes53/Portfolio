@@ -26,32 +26,22 @@ if (myBool) {
 }
 
 
+// let lastTime = 0;
 
-// let rafId = null;
-// function loop() {
-//     rafId = requestAnimationFrame(loop);
-//     console.log('Looping...');
-// }
-// //loop();
+// function gameLoop(currentTime) {
 
+//     // convert milliseconds → seconds
+//     const deltaTime = (currentTime - lastTime) / 1000;
 
+//     lastTime = currentTime;
 
+//     console.log(deltaTime);
 
-
-// //canvas doodles
-// function draw(x, y) {
-// var c = document.getElementById("particle-canvas");
-// var ctx = c.getContext("2d");
-
-// ctx.strokeStyle = "aqua"; //order matters for this one. Keep it before stroke().
-// ctx.moveTo(100, 0);
-// ctx.lineTo(x, y);
-// ctx.stroke();
-// //ctx.moveTo(0, 400);
-
+//     requestAnimationFrame(gameLoop);
 // }
 
-// draw(2000, 500)
+// requestAnimationFrame(gameLoop);
+
 
 //===============================================
 
@@ -87,15 +77,15 @@ function createParticles() {
     // height: 200
     // };
     // Density scales with area so phones don't get crowded.
-    const count = Math.floor((rect.width * rect.height) / 5000);
+    const count = Math.floor((rect.width * rect.height) / 3000);
     particles = [];
     for (let i = 0; i < count; i++) {
         particles.push({
         x:      Math.random() * rect.width,
         y:      Math.random() * rect.height,
-        r:      Math.random() * 3 + 1,                       // radius 1–4 px
-        vx:     (Math.random() - 0.5) * 0.3,                 // sideways drift
-        vy:     -(Math.random() * 0.4 + 0.15),               // upward drift
+        r:      Math.random() * 2 + 1,                       // radius 1–4 px
+        vx:     (Math.random() - 0.3) * 0.04,                 // sideways drift
+        vy:     -(Math.random() * 0.2 + 0.02),               // upward drift
         alpha:  Math.random() * 0.5 + 0.1,                   // transparency
         color:  PARTICLE_COLORS[Math.floor(Math.random() * PARTICLE_COLORS.length)],
         });
@@ -146,7 +136,7 @@ function startBackground() {
 //   } else {
 //     loop();
 //   }
-loop();
+    loop();
 }
 
 // Restart sizing when the window resizes (e.g., rotating a phone).
@@ -156,3 +146,4 @@ window.addEventListener("resize", () => {
 });
 
 startBackground();
+

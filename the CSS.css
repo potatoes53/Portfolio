@@ -100,10 +100,10 @@ background-size: 50% 50%; */
     /* outline: #f81010 solid 5px; */
 }
 #heroCanvasContainer {
-    position: absolute;
+    position: relative;
     pointer-events: none;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 .nav-container {
     display: flex;
